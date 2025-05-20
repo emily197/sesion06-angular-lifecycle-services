@@ -47,15 +47,11 @@ export class StartComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     console.log('Llamando a ngOnDestroy');
-      this.name = '';
-  this.prefix = '';
-  this.userId = '';
-  console.log('[ngOnDestroy] Datos reseteados');
-    /*if (this.userIdSubscription) {
+    if (this.userIdSubscription) {
       this.userIdSubscription.unsubscribe();
       console.log('[ngOnDestroy] Subscripción limpiada');
     } else {
       console.log('[ngOnDestroy] Sin suscripción que limpiar');
-    }*/
+    }
   }
 }
